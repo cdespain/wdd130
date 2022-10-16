@@ -1,20 +1,45 @@
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Shadows+Into+Light&display=swap');
+
+
+/* Defaults and Resets */
+/* ----- ----- ----- */
+p {
+    font-family: 'Playfair Display', 'Garamond', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Shadows Into Light', 'Copperplate', cursive;
+}
+
+h4 {
+    color: #BFD7B5;
+}
+
+h2 {
+    margin: 0;
+}
+
+/* Header Content */
+/* ----- ----- ----- */
+header {
+    background-color: #171738;
+    height: 200px;
 }
 
 .logo {
     width: 80px;
+    background-color: #7E9CBE;
 }
 
-.icon {
-    width: 80px;
+#logo_link {
+    padding-top: 5px;
 }
 
 nav a {
     text-align: center;
     color: #171738;
     text-decoration: none;
+    padding: 35px;
 }
 
 nav {
@@ -26,20 +51,17 @@ nav a:hover {
     color: #BFD7B5;
 }
 
-#hero-msg h1, #hero-msg h4 {
-    text-align: center;
+/* Body Content */
+/* ----- ----- ----- */
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-.button-box {
-    text-align: center;
-}
-
-.logo {
-    background-color: #7E9CBE;
-}
-
-main section {
-    text-align: center;
+.home-title {
+    color: #BFD7B5;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 #background {
@@ -49,17 +71,49 @@ main section {
 
 body {
     background-color: #44443E;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #171738;
-    height: 200px;
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #171738;
 }
 
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+/* Message/Callout Content */
+/* ----- ----- ----- */
 .book, .join {
     background-color: #171738;
     color: #7E9CBE;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
@@ -67,26 +121,10 @@ header {
     color: #171738;
 }
 
-
 .msg {
     background-color: #171738;
-}
-
-footer {
-    background-color: #171738;
-    color: #BFD7B5;
-}
-
-footer p {
-    font-size: 1.1em;
-}
-
-.home-title {
-    color: #BFD7B5;
-}
-
-h4 {
-    color: #BFD7B5;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -95,6 +133,26 @@ h4 {
 
 .msg p {
     color: #BFD7B5;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+/* Footer Content */
+/* ----- ----- ----- */
+
+footer {
+    background-color: #171738;
+    color: #BFD7B5;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer p {
+    font-size: 1.1em;
 }
 
 footer a {
