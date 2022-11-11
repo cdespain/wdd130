@@ -1,0 +1,53 @@
+#stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: steelblue;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+#content {
+    background-color: white;
+}
+
+img {
+    size: 100%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: .8em;
+    margin-bottom: -10px;
+}
+
+body {
+    max-width: 300px;
+    margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+}
+
+#stats p {
+    color: white;
+    padding: 5px;
+    margin-bottom: -5px;
+    font-size: 1.2em;
+}
+
+#stats h4 {
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: -5px;
+    font-size: .8em;
+}
+
+#stats div {
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Shadows+Into+Light&display=swap');
 
-
+/* MAIN PAGE index.html*/
+/* ----- ----- ----- ----- ----- */
 /* Defaults and Resets */
 /* ----- ----- ----- */
 p {
@@ -259,7 +260,105 @@ footer p a:hover {
     text-decoration: underline;
 }  
 
+/* FAQ PAGE faq.html*/
+/* ----- ----- ----- ----- ----- */
 
+/* Opacity Options for Color Palette: */
+/* #7E9CBE (Light Blue) rgb(126, 156, 190, 0.5) */
+/* #171738 (Dark Purple) rgb(23, 23, 56, 0.5) */
+/* #BFD7B5 (Mint Green) rgb(191, 215, 181, 0.5) */
+/* #44443E (Background Brown) rgb(68, 68, 62, 0.5) */
+/* */
+
+.faq-grid {
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 10px;
+}
+
+.faq-title {
+    grid-column: 5 / 8;
+    grid-row: 2 / 3;
+    text-align: center;
+    margin-right: 20px;
+    color: #BFD7B5;
+    background-color: rgb(68, 68, 62, 0.8);
+    border-radius: 150px;
+    transition: transform .4s;
+}
+
+.faq-title:hover {
+    transform: scale(1.1);
+}
+
+#faq-banner-img {
+    width: 100%;
+    grid-column: 1 / 9;
+    grid-row: 1 / 4;
+}
+
+#dropdown-questions-left {
+    z-index: 1;
+    margin-top: 10px;
+    grid-column: 1 / 5;
+    text-align: left;
+    grid-row: 3 / 6;
+}
+
+#dropdown-questions-right {
+    grid-column: 5 / 9;
+    text-align: right;
+    grid-row: 4 / 6;
+}
+
+#faq-background-img {
+    z-index: -1;
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(23, 23, 56, 0.5);
+    box-shadow: 5px 5px 10px #171738;
+}
+
+.faq-list {
+    background-color: rgb(23, 23, 56, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.faq-question {
+    transition: transform .2s;
+    background-color: rgb(23, 23, 56, 0.2);
+    color: white;
+    font-family: 'Shadows Into Light', 'Copperplate', cursive;
+    font-size: 1.2em;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 5px;
+    color: #BFD7B5;
+    border-radius: 10px;
+    border: 5px ridge #171738;
+    margin: 15px;
+}
+
+.faq-question:hover {
+    transform: scale(1.05);
+}
+
+.faq-answer {
+    background-color: rgb(126, 156, 190, 0.8);
+    color: #171738;
+    padding: 10px;
+    line-height: 1.5em;
+    margin: 8px;
+    border-radius: 15px;
+    border: 5px ridge #171738;
+}
+
+/* Media Queries */
+/* ----- ----- ----- ----- ----- */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
         display: block;
