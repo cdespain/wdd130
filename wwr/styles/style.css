@@ -291,7 +291,7 @@ footer p a:hover {
     transform: scale(1.1);
 }
 
-#faq-banner-img {
+.faq-banner-img {
     width: 100%;
     grid-column: 1 / 9;
     grid-row: 1 / 4;
