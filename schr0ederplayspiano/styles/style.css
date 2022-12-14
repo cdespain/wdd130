@@ -18,6 +18,10 @@ p, nav {
     font-family: "Crimson Text", sans-serif;
 }
 
+p {
+    padding: 1em;
+}
+
 h1, h2, h3, h4, h5, h6{
     font-family: "Dancing Script", cursive;
     font-size: 3em;
@@ -316,6 +320,7 @@ footer a:nth-of-type(3) {
     width: 60%;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgb(101, 31, 112, 0.8),0 6px 20px 0 rgb(101, 31, 112, 0.8);
+    background-color: rgb(13, 1, 6, 0.8);
 }
 
 .controller {
@@ -325,6 +330,7 @@ footer a:nth-of-type(3) {
     width: 40%;
     margin: 10px;
     box-shadow: 0 4px 8px 0 rgb(101, 31, 112, 0.8),0 6px 20px 0 rgb(101, 31, 112, 0.8);
+    background-color: rgb(13, 1, 6, 0.8);
 }
 
 /* Modal Popup */
